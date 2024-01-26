@@ -6,7 +6,7 @@ from django.core.mail import send_mail
 class EmailAPIView(APIView):
     def post(self, request):
         try:
-            to_email = "dodoy147@hotmail.com"
+            to_email = "xxxxx@hotmail.com"
             subject = "Mensaje de Prueba"
             message = request.data.get('message')
             send_mail(subject, message, None, [to_email])
